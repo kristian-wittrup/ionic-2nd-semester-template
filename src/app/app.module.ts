@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { SubPage } from "../pages/sub/sub";
 import {HomePageModule} from "../pages/home/home.module";
 import {SubPageModule} from "../pages/sub/sub.module";
-const myLink : DeepLinkConfig = {
+const myLink : DeepLinkConfig= {
   links: [
     { component: HomePage, name: 'home' },
     { component: SubPage, name: 'sub' },

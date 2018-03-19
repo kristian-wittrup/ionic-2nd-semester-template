@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-padding>
+<ion-content  no-padding>
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -14,11 +14,40 @@
     <ion-row class="main">
       <ion-col col-12 col-md-6 col-lg-3 col-xl-1>
         <h2>Header 1</h2>
+        <button ion-button color="light">Light</button>
         <p>Much power, emmet nice - yes'artthhh</p>
       </ion-col>
       <ion-col col-12 col-md-6 col-lg-3 col-xl-1>
-        <h2>Header 2</h2>
-        <p>Much power, emmet nice - yes'artthhh</p>
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label fixed>Website</ion-label>
+          <ion-input type="url"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Phone</ion-label>
+          <ion-input type="tel"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Toggle</ion-label>
+          <ion-toggle></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Checkbox</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+
       </ion-col>
       <ion-col col-12 col-md-6 col-lg-3 col-xl-1>
         <h2>Header 3</h2>

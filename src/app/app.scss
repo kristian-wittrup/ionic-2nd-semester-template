@@ -17,10 +17,36 @@
 // IF the browser does NOT support the  CSS Grid Layout specification
 // We rely on the use of the CSS Flexbox standard instead
 
+body {
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+
+ion-app,
+ion-nav,
+ion-tab,
+ion-tabs,
+.app-root {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+ion-content nav.scroll-content {
+  height:100px;
+}
 ul {
   list-style: none;
   display: flex;
   li {
     padding: 8px;
+    &:hover {
+      color: lightcoral;
+    }
   }
 }

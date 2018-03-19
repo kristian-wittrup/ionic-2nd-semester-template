@@ -1,12 +1,52 @@
 <ion-header>
-
   <ion-navbar>
-
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-slides pager>
+    <ion-slide style="background-image: url(../../assets/imgs/deadpool.png)">
+      <h1>Deadpool Approves!</h1>
+      <p>I hope that Marvel does not sue me for this!</p>
+      <button ion-button>Click me</button>
+    </ion-slide>
+    <ion-slide style="padding-right: 30%; background-position: center; background-image: url(../../assets/imgs/blue-horsie.png); background-color:lightskyblue">
+      <h1>Deadpool's "Friend"</h1>
+      <p>Not creappy at all... really</p>
+      <button ion-button color="secondary">Click me</button>
+    </ion-slide>
+    <ion-slide style="background-image: url(../../assets/imgs/deadpool-taxi.png); background-color:lightsteelblue">
+      <h1>Have to travel</h1>
+      <p>In style - in NY as a anti-hero</p>
+      <button ion-button color="light">Click me</button>
+    </ion-slide>
+  </ion-slides>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col id="box1">
+        1
+      </ion-col>
+      <ion-col id="box2">
+        <ion-buttons >
+          <button ion-button color="danger" outline>Primary Outline</button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col id="box3">
+        <h1>Frede er her kun lidt og sur</h1>
+        <h3>Hvor er mine bønner</h3>
+        <ion-buttons end>
+          <button ion-button color="danger" outline>Primary Outline</button>
+        </ion-buttons>
+        <p>Er det med chili? Lorem ipsum er ikke godkendt som fyld tekst</p>
 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
 </ion-content>
